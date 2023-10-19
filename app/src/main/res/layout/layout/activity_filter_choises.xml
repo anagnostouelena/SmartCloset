@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FilterChoises">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="201dp"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <CheckBox
+                    android:id="@+id/Dress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dress" />
+
+                <CheckBox
+                    android:id="@+id/Jeans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jeans" />
+
+                <CheckBox
+                    android:id="@+id/Coat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coat" />
+
+                <CheckBox
+                    android:id="@+id/shorts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="shorts" />
+
+                <CheckBox
+                    android:id="@+id/Skirts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skirts" />
+
+                <CheckBox
+                    android:id="@+id/Tops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tops" />
+
+                <CheckBox
+                    android:id="@+id/Shoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shoes" />
+
+                <CheckBox
+                    android:id="@+id/Bags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bags" />
+
+                <CheckBox
+                    android:id="@+id/Accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accessories" />
+
+                <CheckBox
+                    android:id="@+id/Boufan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Boufan" />
+
+                <CheckBox
+                    android:id="@+id/Jackets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jackets" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Season"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <CheckBox
+                    android:id="@+id/Winter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Winter" />
+
+                <CheckBox
+                    android:id="@+id/Autumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Autumn" />
+
+                <CheckBox
+                    android:id="@+id/Summer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Summer" />
+
+                <CheckBox
+                    android:id="@+id/Spring"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spring" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Occasion"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <CheckBox
+                    android:id="@+id/Formal_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Formal events" />
+
+                <CheckBox
+                    android:id="@+id/Work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Work" />
+
+                <CheckBox
+                    android:id="@+id/Casual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Casual" />
+
+                <CheckBox
+                    android:id="@+id/Sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sports" />
+
+                <CheckBox
+                    android:id="@+id/Special_Occasion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Special Occasion" />
+
+                <CheckBox
+                    android:id="@+id/Cultural_Event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cultural Event" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/apply_season_categories_occasion_button_sheet"
+        android:layout_marginEnd="-107dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/apply_season_categories_occasion_button_sheet"
+        android:text="Clear All"
+        android:textColor="@color/lavender"
+        android:background="@android:color/transparent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/apply_season_categories_occasion_button_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="27dp"
+        android:text="Apply"
+        android:textColor="@color/lavender"
+        android:background="@android:color/transparent">
+
+    </Button>
+
+
+</RelativeLayout>
+
+

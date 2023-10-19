@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_baseline_check_24" />
+
+
+    <ImageView
+
+        android:id="@+id/ImageViewCameraGallery"
+        android:layout_width="230dp"
+        android:layout_height="188dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ImageView>
+
+    <Spinner
+        android:id="@+id/spinnerSeason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageViewCameraGallery"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="17dp"
+        android:entries="@array/spinnerSeason"
+        android:background="@drawable/spinner">
+
+    </Spinner>
+
+    <Spinner
+        android:background="@drawable/spinner"
+        android:id="@+id/occationspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSeason"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:entries="@array/spinnerSport">
+
+    </Spinner>
+
+    <Spinner
+        android:background="@drawable/spinner"
+        android:id="@+id/spinnerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/occationspinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/spinnerCategories">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/deleteButtonDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:text="DELETE"
+        android:textColor="@color/design_default_color_error">
+
+    </Button>
+
+    <Button
+        android:id="@+id/updateTheRecord"
+        android:text="Update The Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deleteButtonDetails"
+        android:layout_below="@+id/spinnerCategories"
+        android:layout_marginTop="284dp"
+        android:layout_marginBottom="-1dp">
+
+    </Button>
+
+
+</RelativeLayout>
