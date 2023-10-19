@@ -45,31 +45,13 @@ public class MainActivity extends AppCompatActivity {
     public  static String season;
     public  static String occasion;
     public  static  GridView gridView;
-//    boolean dressIsChecked;
-//    boolean JeansIsChecked;
-//    boolean CoatIsChecked;
-//    boolean shortsIsChecked;
-//    boolean SkirtsIsChecked;
-//    boolean TopsIsChecked;
-//    boolean ShoesIsChecked;
-//    boolean BagsIsChecked;
-//    boolean AccessoriesIsChecked;
-//    boolean BoufanIsChecked;
-//    boolean JacketsIsChecked;
-//    boolean WinterIsChecked;
-//    boolean AutumnIsChecked;
-//    boolean SummerIsChecked;
-//    boolean SpringIsChecked;
-//    boolean WorkIsChecked;
-//    boolean Formal_eventsIsChecked;
-//    boolean CasualIsChecked;
-//    boolean SportsIsChecked;
-//    boolean Special_OccasionIsChecked;
-//    boolean Cultural_EventIsChecked;
+
     List<String> selectedCategories;
 
 
 
+
+    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,20 +67,20 @@ public class MainActivity extends AppCompatActivity {
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.bottomHome);
+        bottomNavigationView.setSelectedItemId(R.id.bottomHomee);
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.bottomHome:
+                case R.id.bottomHomee:
                     return true;
 
-                case R.id.randomOutfit:
+                case R.id.randomOutfitt:
                     startActivity(new Intent(getApplicationContext(), RandomOutfits.class));
                     //anim that i made
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     finish();
                     return true;
 
-                case R.id.calledar:
+                case R.id.calendar:
                     startActivity(new Intent(getApplicationContext(), Calendar.class));
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     finish();
@@ -163,12 +145,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //tool bar
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_tool_bar,menu);
-        return super.onCreateOptionsMenu(menu);
 
-    }
 //tool bar
 //    @Override
 //    public boolean onOptionsItemSelected(MenuItem item) {

@@ -1,7 +1,5 @@
-package com.example.myapplication;
+package com.example.promiceitsfinal;
 
-import static com.example.myapplication.Calendar.gridViewCalendar;
-import static com.example.myapplication.MainActivity.gridView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,6 +35,7 @@ public class Calendar extends AppCompatActivity {
     TextView date_view;
     String dateCalendar;
     public static GridView gridViewCalendar;
+    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,21 +58,21 @@ public class Calendar extends AppCompatActivity {
          });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.calledar);
+        bottomNavigationView.setSelectedItemId(R.id.calendar);
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
-                case R.id.bottomHome:
+                case R.id.bottomHomee:
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     return true;
 
-                case R.id.randomOutfit:
+                case R.id.randomOutfitt:
                     startActivity(new Intent(getApplicationContext(), RandomOutfits.class));
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     finish();
                     return true;
 
-                case R.id.calledar:
+                case R.id.calendar:
 
                     return true;
             }

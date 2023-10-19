@@ -1,8 +1,6 @@
 package com.example.promiceitsfinal;
 
 
-import static com.example.myapplication.RandomOutfits.occationspinnerAPi;
-import static com.example.myapplication.RandomOutfits.spinnerCategoriesAPI;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;

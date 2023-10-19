@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.promiceitsfinal;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import java.io.ByteArrayOutputStream;
 public class ClickListenerImageView implements View.OnClickListener{
     Bitmap bitmap;
 
-   public  ClickListenerImageView(Bitmap bitmap){
+   public ClickListenerImageView(Bitmap bitmap){
        this.bitmap=bitmap;
    }
     @Override

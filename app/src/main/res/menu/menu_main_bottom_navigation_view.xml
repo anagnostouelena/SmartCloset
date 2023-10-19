@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/bottomHome"
+        android:id="@+id/bottomHomee"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Smart Closet"/>
 
     <item
-        android:id="@+id/randomOutfit"
+        android:id="@+id/randomOutfitt"
         android:icon="@drawable/ic_baseline_collections_24"
         android:title="Random Outfit"/>
 
     <item
-        android:id="@+id/calledar"
+        android:id="@+id/calendar"
         android:icon="@drawable/ic_baseline_calendar_month_24"
         android:title="Calledar"/>
 
