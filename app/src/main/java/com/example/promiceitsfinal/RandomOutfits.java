@@ -80,7 +80,7 @@ public class RandomOutfits extends AppCompatActivity {
                 case R.id.randomOutfit:
                     return true;
 
-                case R.id.calledar:
+                case R.id.calendar:
                     startActivity(new Intent(getApplicationContext(), Calendar.class));
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     finish();

@@ -61,12 +61,12 @@ public class Calendar extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.calendar);
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
-                case R.id.bottomHomee:
+                case R.id.bottomHome:
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     return true;
 
-                case R.id.randomOutfitt:
+                case R.id.randomOutfit:
                     startActivity(new Intent(getApplicationContext(), RandomOutfits.class));
                     overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                     finish();
@@ -150,6 +150,6 @@ class MyTaskCalendar extends AsyncTask<Void,Void,Void>{
     }
     @Override
     protected void onPostExecute(Void result) {
-        gridViewCalendar.setAdapter(myAdapterCaledar);
+        Calendar.gridViewCalendar.setAdapter(myAdapterCaledar);
     }
 }
